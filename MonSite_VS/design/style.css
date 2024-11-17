@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans+KR:whgt@400;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+nav a, nav li {
+    color: #ff7373;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: "Noto Sans KR", cursive;
+    /*margin-top: 10px;
+    margin-bottom: 10px; */
+    margin: 40px 0 10px;
+    text-align: center;
+}
+
+h2 {
+    margin: 0.83em 0 0 0;
+}
+
+body {
+    font-family: 'Roboto', serif;
+    margin: 0;
+}
+
+ul {
+    /* MARGIN si le bas n'est pas donné alors = haut, et si la gauche n'est pas donnée alors = droite */
+    /* margin: 5px 0 0 0; */
+    margin: 5px 0;
+    /* margin: 5px 0 10px; */
+    /* margin: 10px; */
+    /* margin-left: 0px;
+    margin-top: 5px;
+    margin-right: 0px;
+    margin-bottom: 5px; */
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+header {
+    /* 
+    - nom (black white purple)
+    - code en hexadecimal (#FDFDFD)
+    - rgb rgb(rouge, vert , bleu)
+    - rgba rgba(rouge, vert, bleu, 0.4) */
+    font-size: 60px;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    text-shadow: 0 0 4px black;
+    /* padding-top: 300px; */
+}
+
+footer {
+    /* background-color: #ebf2fa; */
+    /* background-color: white;
+    background-image: url("https://d1o2pwfline4gu.cloudfront.net/m/s/24064/24054823/a-0005.png");
+    background-size: 100px; */
+    background: left/ 100px url("https://d1o2pwfline4gu.cloudfront.net/m/s/24064/24054823/a-0005.png"), #ebf2fa;
+    font-size: 14px;
+    margin-top: 40px;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#bienvenue {
+    background-image: url("../images/Portugal.jpeg");
+    background-repeat: no-repeat ;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    /* justify-content: left; */
+    align-items: center;
+    /* flex-direction: row; */
+}
+
+#stade {
+    background-image: url("../images/fcporto.jpg") ;
+    background-repeat: no-repeat ;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    /* justify-content: left; */
+    align-items: center;
+    /* flex-direction: row; */
+}
+
+#slogan {
+    display: block;
+    font-size: 30px;
+    font-family: "Roboto", arial, sans-serif;
+}
+
+#top {
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+#lisbonne {
+    background-image: url("https://imagenes.20minutos.es/files/image_640_auto/uploads/imagenes/2023/11/13/tranvias-de-lisboa-istock-856090348.jpeg");
+    grid-row: 1 / 3;
+}
+
+#porto {
+    background-image: url("https://images.impresa.pt/sicnot/2022-04-18-fc-porto-v-juventus---uefa-champions-league-round-of-16-leg-one/original");
+    grid-column: 2 / 4;  
+}
+
+#rossio {
+    background-image: url("https://a.travel-assets.com/findyours-php/viewfinder/images/res70/538000/538455-rossio-square.jpg");
+}
+
+#santarem {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f8/Vista_geral_da_S%C3%A9_inserida_na_pra%C3%A7a_frontal.jpg");
+}
+
+#flexbox-ville {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+#voir {
+    display: inline-flex; 
+    align-items: center; 
+    gap: 2px; 
+    color: #ff7373;
+    transition: all 0.4s;
+    gap: 0;
+}
+
+#voir:hover {
+    gap: 10px;
+}
+
+#flexbox-foot {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+
+#images-stade {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+#points-stade {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #f0f0f0;
+}
+
+#points-stade li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    background-color: #1a1a1a;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#points-stade li::before {
+    content: "\2022";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translate(-50%);
+    font-size: 1.5rem;
+    color: #00aaff;
+}
+
+#points-stade li:hover {
+    background-color: #00aaff;
+    color: #000;
+    transform: scale(1.02);
+}
+
+#points-stade li:hover::before {
+    color: #000;
+}
+
+.ville {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    border: 3px solid white;
+    transition: all 0.2s;
+    border-radius: 30px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 0 0 30px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ville:hover {
+    border: 3px solid #ff7373;
+}
+
+.mot {
+    color: pink;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.contenu {
+    padding: 10px;
+    /* padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px; */
+}
+
+.conteneur {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.image-tour {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.image-tour:hover {
+    transform: scale(1.05);
+}
+
+/* LE RESPONSIVE DESIGN */
+
+/* 1300 : notebook */
+@media all and (max-width: 1350px) {
+    .conteneur {
+        width: 800px;
+    }
+    #flexbox-ville {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #porto {
+        grid-column: auto;
+    }
+    #santarem {
+        grid-column: 1 / 3;
+    }
+    #images-stade {
+        flex-direction: column;
+        align-items: center;
+    }
+    #points-stade li {
+        padding: 8px 0;
+        font-size: 16px;
+    }
+    #points-stade li::before {
+        font-size: 1.2rem;
+        left: 5px;
+    }
+    .image-tour {
+        width: 80%;
+    }
+}
+
+/* 768 : tablettes */
+@media all and (max-width: 800px) {
+    .conteneur {
+        width: 500px;
+
+    }
+    #flexbox-ville {
+        grid-template-columns: 1fr;
+    }
+    #lisbonne {
+        grid-row: auto;
+    }
+    #santarem {
+        grid-column: auto;
+    }
+    #flexbox-foot {
+        flex-direction: column;
+    }
+    #logo-foot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #images-stade {
+        flex-direction: column;
+        align-items: center;
+    }
+    #points-stade {
+        padding: 0 10px;
+    }
+    #points-stade li {
+        padding: 6px 0;
+        font-size: 14px;
+    }
+    #points-stade li::before {
+        font-size: 1.1rem;
+        left: 3px;
+    }
+    .image-tour {
+        width: 90%;
+    }
+}
+
+/* 480 : smartphone */
+@media all and (max-width: 570px) {
+    .conteneur {
+        width: 100%;
+    }
+    #bienvenue {
+        padding: 15px;
+    }
+    #stade {
+        padding: 10px;
+    }
+    #points-stade {
+        padding: 8px;
+    }
+
+    #points-stade li {
+        padding: 4px;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    #points-stade li::before {
+        font-size: 1rem;
+        left: 2px;
+    }
+    #images-stade {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-tour {
+        width: 100%;
+    }
+}
