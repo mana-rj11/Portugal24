@@ -17,7 +17,7 @@ Ce site web présente une sélection de destinations portugaises qui m’ont mar
 - **Lisbonne** – le charme des ruelles anciennes et des tramways jaunes  
 - **Porto** – une ville dynamique avec une architecture moderne et historique  
 - **Rossio** – quartier emblématique au cœur de Lisbonne  
-- **Santarém** – petite ville paisible au patrimoine impressionnant  
+- **Santarém** – petit village paisible au patrimoine impressionnant  
 
 🧭 Le site propose une section “Top Destinations” avec des images interactives représentant chaque lieu visité.
 
