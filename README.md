@@ -8,6 +8,7 @@ Ce site web présente une sélection de destinations portugaises qui m’ont mar
 🖼️ **Aperçu visuel du site**
 
 ![Page d’accueil du site Portugal Tour](./Portugal2024.png)
+![Mes destinations au Portugal](./destinations.png)
 
 ---
 
